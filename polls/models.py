@@ -3,7 +3,7 @@ from django.db import models
 # Обработка вопроса
 class Question(models.Model):
     text = models.CharField(max_length=420)
-    pub_date = models.DateTimeField('date_published')
+    pub_date = models.DateTimeField('date published')
 
     def __str__(self):
         return self.text
